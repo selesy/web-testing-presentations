@@ -8,6 +8,7 @@
   <name>Web Testing Presentations - Parent</name>
   
   <modules>
+    <module>test-web-application</module>
     <module>test-web-site</module>
   </modules>
   
