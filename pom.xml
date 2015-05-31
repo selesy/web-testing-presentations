@@ -11,6 +11,7 @@
   <modules>
     <module>test-web-application</module>
     <module>test-web-site</module>
+    <module>functional-test-examples</module>
   </modules>
 
   <properties>
