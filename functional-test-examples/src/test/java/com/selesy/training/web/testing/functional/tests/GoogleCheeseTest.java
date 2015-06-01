@@ -4,6 +4,7 @@
 package com.selesy.training.web.testing.functional.tests;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,6 +12,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.selesy.training.web.testing.functional.pages.GoogleSearchHomePage;
+import com.selesy.training.web.testing.functional.pages.GoogleSearchResultsPage;
 
 /**
  * Provides a slightly altered version of the Java test example provided by the
@@ -23,6 +27,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class GoogleCheeseTest extends AbstractSeleniumTest {
 
+  /**
+   * This test is equivalent to the one referenced by the link above with the
+   * changes needed to turn it into a JUnit test.
+   */
   @Test
   public void testCheeseSearch() {
     webDriver.get("https://www.google.com");
@@ -39,6 +47,21 @@ public class GoogleCheeseTest extends AbstractSeleniumTest {
     });
 
     assertEquals("Cheese! - Google Search", webDriver.getTitle());
+  }
+
+  /**
+   * This test is equivalent to the test above but uses the PageObject pattern
+   * to abstract the description of the page away from the browser automation
+   * and test assertions.  Notice how conversational the tests become when the
+   * operational portions of the automation is moved into the page objects.
+   */
+  @Test
+  public void testCheeseSearchWithPageObjects() {
+    GoogleSearchHomePage homePage = new GoogleSearchHomePage(webDriver);
+    assertTrue(homePage.isTitled("Google"));
+    homePage.setSearchTerms("Cheese!");
+    GoogleSearchResultsPage resultsPage = homePage.clickGoogleSearchButton();
+    assertTrue(resultsPage.isTitled("Cheese! - Google Search"));
   }
 
 }
