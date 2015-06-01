@@ -1,6 +1,7 @@
 package com.selesy.training.web.testing.functional.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -16,7 +17,12 @@ public class GoogleSearchHomePage extends AbstractPageObject {
   }
   
   public GoogleSearchResultsPage clickGoogleSearchButton() {
-    WebElement element = webDriver.findElement(By.name("btnK"));
+    WebElement element = null;
+    try{
+      element = webDriver.findElement(By.name("btnK"));
+    } catch(NoSuchElementException e) {
+      element = webDriver.findElement(By.name("btnG"));
+    }
     element.submit();
 
     (new WebDriverWait(webDriver, 10)).until(new ExpectedCondition<Boolean>() {
