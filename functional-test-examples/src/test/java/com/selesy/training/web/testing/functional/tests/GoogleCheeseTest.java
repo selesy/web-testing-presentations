@@ -33,19 +33,26 @@ public class GoogleCheeseTest extends AbstractSeleniumTest {
    */
   @Test
   public void testCheeseSearch() {
+    // Navigate to Google's search home page and verify that the page title
+    // matches the expected "Google".
     webDriver.get("https://www.google.com");
     assertEquals("Google", webDriver.getTitle());
 
+    // Find the search text input and "type" the phrase "Cheese!" into it.
+    // Then submit the form containing the element.
     WebElement element = webDriver.findElement(By.name("q"));
     element.sendKeys("Cheese!");
     element.submit();
 
+    // Wait until search results have loaded (with a 10 second time-out) by
+    // waiting until the title changes to match the search string
     (new WebDriverWait(webDriver, 10)).until(new ExpectedCondition<Boolean>() {
       public Boolean apply(WebDriver d) {
         return d.getTitle().toLowerCase().startsWith("cheese!");
       }
     });
 
+    // Verify that the title has changed to the expected value
     assertEquals("Cheese! - Google Search", webDriver.getTitle());
   }
 
