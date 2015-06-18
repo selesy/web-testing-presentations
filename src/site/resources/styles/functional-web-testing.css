@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+
+/* html {
+	height: 100%;
+} */
+body {
+	background: #ffffff;
+	/*   background-color: #ecf4fe; */
+	/*   background-image: url("../images/lion-logo.gif"); */
+	/*   background-size: 6500px 4450px; */
+	color: #004989;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 24pt;
+	height: 100%;
+	margin: 0;
+}
+
+.impress-enabled .step, .impress-enabled .step.active {
+	margin-top: -25px;
+	opacity: 1.0;
+}
+
+#footer {
+	background-color: 00275d;
+	background-image: url("./elion-logo.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	bottom: 0;
+	color: #fff;
+	font-size: 20pt;
+	height: 50px;
+	line-height: 1.1;
+	padding-left: 200px;
+	padding-top: 5px;
+	position: fixed;
+	width: 100%;
+}
+
+#footer #group {
+	font-size: 8pt;
+}
+
+.impress-enabled .step, .impress-enabled .step.active {
+	margin-top: -25px;
+}
+
+.step {
+	color: #ffffff;
+	display: block;
+	width: 900px;
+	height: 700px;
+	padding: 40px 60px;
+	text-align: center;
+	display: block;
+}
+
+#title {
+	color: #00275d;
+	display: block;
+	width: 900px;
+	height: 700px;
+	padding: 40px 60px;
+	text-align: center;
+	display: block;
+}
+
+h1, #title h1, h2, h3 {
+	border-bottom: 2px solid #ffffff;
+	font-size: 36pt;
+	font-weight: bold;
+	margin: 0 0 24pt;
+	padding: 0 0 12pt;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32pt;
+}
+
+h3 {
+	font-size: 28pt;
+}
+
+.bulleted>ul, .bulleted>ol {
+	margin-left: 50px;
+	margin-top: 50px;
+	text-align: left;
+}
+
+.bulleted>ul {
+	list-style: disc;
+}
+
+.bulleted>ol {
+	list-style: decimal;
+}
+
+li ul li{
+	list-style: disc;
+	margin-left: 50px;
+}
+
+.reference, .superscript {
+	font-size: 0.6em;
+	position: relative;
+	bottom: 0.8em;
+}
+
+.reference:before {
+	content: "[";
+}
+
+.reference:after {
+	content: "]";
+}
+
+.note {
+	bottom: 0;
+	font-size: 16pt;
+	position: fixed;
+	text-align: left;
+}
+
+.slide {
+	color: #00275d;
+}
+
+.slide h1 {
+	border-bottom: 2px solid #00275d;
+	font-size: 36pt;
+	font-weight: bold;
+	margin: 0 0 24pt;
+	padding: 0 0 12pt;
+	text-align: center;
+}
+
+.slide h2 {
+	border-bottom: 2px solid #00275d;
+	font-size: 32pt;
+	font-weight: bold;
+	margin: 0 0 24pt;
+	padding: 0 0 12pt;
+	text-align: center;
+}
+
+#all {
+	/*   background-color: #ffffff; */
+	/*   background-image: url("../images/lion-logo.gif"); */
+	/*   background-position: top left; */
+	/*   background-repeat: no-repeat; */
+	/*   background-size: 6500px 4450px; */
+	/*   height: 5450px; */
+	/*   width: 7500px; */
+	
+}
