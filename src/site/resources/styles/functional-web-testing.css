@@ -121,6 +121,14 @@ li ul li{
 	text-align: left;
 }
 
+.quote {
+	margin-top: 150px;
+}
+
+.citation {
+	font-size: 24pt;
+}
+
 .slide {
 	color: #00275d;
 }
