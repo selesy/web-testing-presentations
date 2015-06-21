@@ -85,23 +85,38 @@ h3 {
 	font-size: 28pt;
 }
 
-.bulleted>ul, .bulleted>ol {
+.bulleted>ul, .bulleted>ol,
+.bulleted ul, .bulleted ol {
 	margin-left: 50px;
 	margin-top: 50px;
 	text-align: left;
 }
 
-.bulleted>ul {
+.bulleted>ul, .bulleted ul {
 	list-style: disc;
 }
 
-.bulleted>ol {
+.bulleted>ol, .bulleted ol {
 	list-style: decimal;
 }
 
 li ul li{
 	list-style: disc;
 	margin-left: 50px;
+}
+
+.left {
+	float: left;
+	width: 50%;
+}
+
+.right {
+	float: right;
+	width: 50%;
+}
+
+.clear {
+	clear: both;
 }
 
 .reference, .superscript {
