@@ -146,12 +146,44 @@
       <h1>Selenium Overview</h1>
     </div>
     
-    <div id="selenium-1" class="step" data-x="-7000" data-y="3800">
+    <div id="selenium-1" class="step bulleted" data-x="-7000" data-y="3800">
       <h1>Selenium 1</h1>
+      <ul>
+        <li>Javascript "shim"</li>
+        <li>Inserted into frame after page load</li>
+        <li>Couldn't detect DOM changes</li>
+        <li>Selenium IDE provided a "test recorder"
+      </ul>
     </div>
     
-    <div id="selenium-2" class="step" data-x="-6000" data-y="3800">
+    <div id="selenium-2" class="step bulleted" data-x="-6000" data-y="3800">
       <h1>Selenium 2</h1>
+      <ul>
+        <li>Browser plugin</li>
+        <li>Simulates user behaviors</li>
+        <li>Provides tools to manage DOM changes</li>
+        <li>No IDE or test recorder</li>
+      </ul>
+    </div>
+    
+    <div id="selenium-grid" class="step bulleted" data-x="-5000" data-y="3800">
+      <h1>Selenium Grid</h1>
+      <ul>
+        <li>Allows remote cluster to execute tests</li>
+        <li>Mix and match OS, browsers and versions</li>
+        <li>The same test can be run on multiple profiles</li>
+        <li>Commercial support - you don't have to manage your own infrastructure</li>
+      </ul>
+    </div>
+    
+    <div id="screenshot" class="step bulleted" data-x="-5000" data-y="3800">
+      <h1>Get Screenshot</h1>
+      <ul>
+        <li>It's not just about application behavior</li>
+        <li>Visual "Look & Feel" is also important</li>
+        <li>Helps find those "off-by-one" pixel errors</li>
+        <li>Not supported on every browser</li>
+      </ul>
     </div>
     
     
@@ -236,8 +268,8 @@
         <li>getTitle()</li>
         <li>getCurrentUrl()</li>
         <li>getPageSource()</li>
-        <p>(also findElement() and findElements() above)</p>
       </ul>
+      <p>(also findElement() and findElements() above)</p>
     </div>
     
     <div id="api-4" class="step bulleted" data-x="-1000" data-y="4600">
@@ -277,6 +309,14 @@
       <h1>Best Practices</h1>
     </div>
     
+    <div id="page-object" class="step bulleted" data-x="-7000" data-y="7000">
+      <h1>PageObject pattern</h1>
+      <ul>
+        <li>Avoids
+      </ul>
+    </div>
+    
+    
     
     
     
@@ -288,6 +328,12 @@
 
     <div id="resources-selenium" class="step bulleted" data-x="-7000" data-y="7000">
       <h1>Resources - Selenium</h1>
+      <ul>
+        <li><a href="http://docs.seleniumhq.org/docs/03_webdriver.jsp">Selenium 2 (WebDriver)</a></li>
+        <li><a href="http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#location-strategies">Location strategies</a></li>
+        <li><a href="http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#page-object-design-pattern">PageObject pattern</a></li>
+        <li><a href="http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#explicit-and-implicit-waits">Explicit and Implicit waits</a></li>
+      </ul>
     </div>
 
     <div id="resources-psu" class="step bulleted" data-x="-6000" data-y="7000">
