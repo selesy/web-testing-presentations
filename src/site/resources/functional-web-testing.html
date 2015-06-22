@@ -385,7 +385,10 @@ assertTrue(resultsPage
     <div id="page-object" class="step bulleted" data-x="-7000" data-y="7000">
       <h1>PageObject pattern</h1>
       <ul>
-        <li>Avoids
+        <li>Improves test maintainability</li>
+        <li>Simplifies test code</li>
+        <li>Can be used for partial pages (components/panels/etc)</li>
+        <li>Return new PageObjects through navigation</li>
       </ul>
     </div>
     
@@ -393,6 +396,7 @@ assertTrue(resultsPage
       <h1>Driver selection</h1>
       <ul>
         <li>Avoid specifying a driver in your test code</li>
+        <li>Use DNS names for test servers and clients</li>
         <li>Use the RemoteDriver API to be compatible with Selenium Grid</li>
       </ul>
     </div>
