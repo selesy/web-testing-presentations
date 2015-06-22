@@ -142,11 +142,11 @@
     
     
     
-    <div id="selenium-overview" class="step subtitle" data-x="-8000" data-y="3800">
+    <div id="selenium-overview" class="step subtitle" data-x="-8000" data-y="4000">
       <h1>Selenium Overview</h1>
     </div>
     
-    <div id="selenium-1" class="step bulleted" data-x="-7000" data-y="3800">
+    <div id="selenium-1" class="step bulleted" data-x="-7000" data-y="4000">
       <h1>Selenium 1</h1>
       <ul>
         <li>Javascript "shim"</li>
@@ -156,7 +156,7 @@
       </ul>
     </div>
     
-    <div id="selenium-2" class="step bulleted" data-x="-6000" data-y="3800">
+    <div id="selenium-2" class="step bulleted" data-x="-6000" data-y="4000">
       <h1>Selenium 2</h1>
       <ul>
         <li>Browser plugin</li>
@@ -166,7 +166,7 @@
       </ul>
     </div>
     
-    <div id="selenium-grid" class="step bulleted" data-x="-5000" data-y="3800">
+    <div id="selenium-grid" class="step bulleted" data-x="-5000" data-y="4000">
       <h1>Selenium Grid</h1>
       <ul>
         <li>Allows remote cluster to execute tests</li>
@@ -176,7 +176,7 @@
       </ul>
     </div>
     
-    <div id="screenshot" class="step bulleted" data-x="-5000" data-y="3800">
+    <div id="screenshot" class="step bulleted" data-x="-4000" data-y="4000">
       <h1>Get Screenshot</h1>
       <ul>
         <li>It's not just about application behavior</li>
@@ -191,11 +191,11 @@
     
     
 
-    <div id="selenium-features" class="step subtitle" data-x="-8000" data-y="4600">
+    <div id="selenium-features" class="step subtitle" data-x="-8000" data-y="5000">
       <h1>Selenium Features</h1>
     </div>
     
-    <div id="language-support" class="step bulleted" data-x="-7000" data-y="4600">
+    <div id="language-support" class="step bulleted" data-x="-7000" data-y="5000">
       <h1>Language Support</h1>
       <div class="left">
       <ul>
@@ -218,7 +218,7 @@
       <div class="clear"></div>
     </div>
     
-    <div id="browser-support" class="step bulleted" data-x="-6000" data-y="4600">
+    <div id="browser-support" class="step bulleted" data-x="-6000" data-y="5000">
       <h1>Browser Support</h1>
       <ul>
         <li>Firefox</li>
@@ -230,7 +230,7 @@
       </ul>
     </div>
     
-    <div id="os-support" class="step bulleted" data-x="-5000" data-y="4600">
+    <div id="os-support" class="step bulleted" data-x="-5000" data-y="5000">
       <h1>OS Support</h1>
       <ul>
         <li>Windows 7 and 8</li>
@@ -239,7 +239,7 @@
       </ul>
     </div>
     
-    <div id="api-1" class="step bulleted" data-x="-4000" data-y="4600">
+    <div id="api-1" class="step bulleted" data-x="-4000" data-y="5000">
       <h1>Simple API - User input</h1>
       <ul>
         <li>get()</li>
@@ -250,7 +250,7 @@
       </ul>
     </div>
     
-    <div id="api-2" class="step bulleted" data-x="-3000" data-y="4600">
+    <div id="api-2" class="step bulleted" data-x="-3000" data-y="5000">
       <h1>Simple API - Browser Control</h1>
       <ul>
         <li>getWindowHandle() / getWindowHandles()</li>
@@ -262,7 +262,7 @@
       </ul>
     </div>
     
-    <div id="api-3" class="step bulleted" data-x="-2000" data-y="4600">
+    <div id="api-3" class="step bulleted" data-x="-2000" data-y="5000">
       <h1>Simple API - Test Hooks</h1>
       <ul>
         <li>getTitle()</li>
@@ -272,14 +272,14 @@
       <p>(also findElement() and findElements() above)</p>
     </div>
     
-    <div id="api-4" class="step bulleted" data-x="-1000" data-y="4600">
+    <div id="api-4" class="step bulleted" data-x="-1000" data-y="5000">
       <h1>Simple API - Web 2.0</h1>
       <ul>
         <li>WebDriverWait.until() (static with callback in Java)</li>
       </ul>
     </div>
     
-    <div id="api-5" class="step bulleted" data-x="0" data-y="4600">
+    <div id="api-5" class="step bulleted" data-x="0" data-y="5000">
       <h1>Simple API - WebElement</h1>
       <ul>
         <li>clear()</li>
@@ -296,8 +296,81 @@
     
     
 
-    <div id="examples" class="step subtitle" data-x="-8000" data-y="5400">
+    <div id="demo" class="step subtitle" data-x="-8000" data-y="6000">
+      <h1>Demonstration</h1>
+    </div>
+
+    <div id="examples" class="step subtitle" data-x="-7000" data-y="6000">
       <h1>Examples</h1>
+    </div>
+    
+    <div id="example1" class="step bulleted" data-x="-6000" data-y="6000">
+      <h1>Get a page and test the title</h1>
+      <pre>
+// Navigate to the Google search page
+webDriver.get("https://www.google.com");
+
+// Get the title and compare it to the
+// expectedvalue
+assertEquals("Google", webDriver.getTitle());</pre>
+    </div>
+    
+    <div id="example2" class="step bulleted" data-x="-5000" data-y="6000">
+      <h1>Search For a Specific Word/Phrase</h1>
+      <pre>
+// Find the search box
+WebElement element =
+    webDriver.findElement(By.name("q"));
+
+// Enter "Cheese!"" and click submit
+element.sendKeys("Cheese!");
+element.submit();</pre>
+    </div>
+    
+    <div id="example3" class="step bulleted" data-x="-4000" data-y="6000">
+      <h1>Wait For The Server Response</h1>
+      <pre>
+// Wait for XMLHTTPRequest by detecting
+// the page title changing
+(new WebDriverWait(webDriver, 10))
+    .until(new ExpectedCondition<Boolean>() {
+    
+  public Boolean apply(WebDriver d) {
+    return d.getTitle().toLowerCase()
+        .startsWith("cheese!");
+  }
+  
+});</pre>
+    </div>
+    
+    <div id="example4" class="step bulleted" data-x="-3000" data-y="6000">
+      <h1>Verify the Search Succeeded</h1>
+      <pre>
+// Wait for XMLHTTPRequest by detecting
+// the page title changing
+(new WebDriverWait(webDriver, 10))
+    .until(new ExpectedCondition<Boolean>() {
+    
+  public Boolean apply(WebDriver d) {
+    return d.getTitle().toLowerCase()
+        .startsWith("cheese!");
+  }
+  
+});</pre>
+    </div>
+    
+    <div id="example5" class="step bulleted" data-x="-2000" data-y="6000">
+      <h1>Using a PageObject</h1>
+      <pre>
+GoogleSearchHomePage homePage =
+    new GoogleSearchHomePage(webDriver);
+assertTrue(homePage.isTitled("Google"));
+homePage.setSearchTerms("Cheese!");
+GoogleSearchResultsPage resultsPage =
+    homePage.clickGoogleSearchButton();
+assertTrue(resultsPage
+    .isTitled("Cheese! - Google Search"));
+</pre>
     </div>
     
     
@@ -305,7 +378,7 @@
     
     
 
-    <div id="best-practices" class="step subtitle" data-x="-8000" data-y="6200">
+    <div id="best-practices" class="step subtitle" data-x="-8000" data-y="7000">
       <h1>Best Practices</h1>
     </div>
     
@@ -316,17 +389,25 @@
       </ul>
     </div>
     
+    <div id="driver-selection" class="step bulleted" data-x="-6000" data-y="7000">
+      <h1>Driver selection</h1>
+      <ul>
+        <li>Avoid specifying a driver in your test code</li>
+        <li>Use the RemoteDriver API to be compatible with Selenium Grid</li>
+      </ul>
+    </div>
+    
     
     
     
     
     
 
-    <div id="resources" class="step subtitle" data-x="-8000" data-y="7000">
+    <div id="resources" class="step subtitle" data-x="-8000" data-y="8000">
       <h1>Resources</h1>
     </div>
 
-    <div id="resources-selenium" class="step bulleted" data-x="-7000" data-y="7000">
+    <div id="resources-selenium" class="step bulleted" data-x="-7000" data-y="8000">
       <h1>Resources - Selenium</h1>
       <ul>
         <li><a href="http://docs.seleniumhq.org/docs/03_webdriver.jsp">Selenium 2 (WebDriver)</a></li>
@@ -336,7 +417,7 @@
       </ul>
     </div>
 
-    <div id="resources-psu" class="step bulleted" data-x="-6000" data-y="7000">
+    <div id="resources-psu" class="step bulleted" data-x="-6000" data-y="8000">
       <h1>Resources - Penn State</h1>
       <ul>
         <li><a href="https://github.com/selesy/web-testing-presentations/tree/master/src/site/resources">Code for this presentation</a></li>
@@ -344,7 +425,7 @@
       </ul>
     </div>
 
-    <div id="resources-other" class="step bulleted" data-x="-5000" data-y="7000">
+    <div id="resources-other" class="step bulleted" data-x="-5000" data-y="8000">
       <h1>Resources - Other</h1>
       <ul>
         <li><a href="http://saucelabs.com/">Commercial Selenium Grid service - SauceLabs</a></li>
@@ -357,7 +438,7 @@
     
     
 
-    <div id="questions" class="step subtitle" data-x="-4000" data-y="7000">
+    <div id="questions" class="step subtitle" data-x="-4000" data-y="8000">
       <h1>Questions</h1>
     </div>
     

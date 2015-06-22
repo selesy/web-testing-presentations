@@ -119,6 +119,15 @@ li ul li{
 	clear: both;
 }
 
+pre {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 24pt;
+	padding: 20px;
+	text-align: left;
+}
+
 .reference, .superscript {
 	font-size: 0.6em;
 	position: relative;
