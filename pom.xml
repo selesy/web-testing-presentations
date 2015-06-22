@@ -23,7 +23,7 @@
     <version.javaee>7.0</version.javaee>
     <version.junit>4.12</version.junit>
     <version.junitparams>1.0.4</version.junitparams>
-    <version.selenium>2.45.0</version.selenium>
+    <version.selenium>2.46.0</version.selenium>
   </properties>
 
   <dependencyManagement>

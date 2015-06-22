@@ -3,6 +3,7 @@ package com.selesy.training.web.testing.functional.tests;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.selesy.training.web.testing.functional.utilities.WebDriverFactory;
 
@@ -33,9 +34,9 @@ public abstract class AbstractSeleniumTest {
    */
   @After
   public void tearDown() {
-    if (webDriver != null) {
-      webDriver.quit();
-    }
+//    if (webDriver != null) {
+//      webDriver.quit();
+//    }
   }
 
 }

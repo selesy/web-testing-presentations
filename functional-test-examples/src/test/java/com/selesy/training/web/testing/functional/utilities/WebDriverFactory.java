@@ -37,6 +37,7 @@ public class WebDriverFactory {
   // Indicates which WebDriver implementation should be used if there isn't
   // one specified via the system property.
   public static final String DEFAULT_WEB_DRIVER = FIREFOX_WEBDRIVER_NAME;
+  public static final String DEFAULT_PROFILE_NAME = "selenium";
 
   /**
    * Returns a WebDriver based on the value passed in via the webdriver.name
