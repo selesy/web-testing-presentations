@@ -7,6 +7,11 @@
 - Burp Suite
 - Sonar OWASP Plugin
 
+## Colors
+
+- #1E407D (dark blue)
+- #BECDD4 (light grey)
+
 ## Slides show
 
 - Introduction
