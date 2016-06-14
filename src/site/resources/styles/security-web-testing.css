@@ -286,6 +286,8 @@ a:focus {
 
 .slide-bulleted ul {
   list-style: disc;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .slide-bulleted ul li {
