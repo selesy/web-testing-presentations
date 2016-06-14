@@ -168,6 +168,16 @@ a:focus {
 
 .impress-enabled .step.active { opacity: 1 }
 
+#big-logo {
+  margin-left: 500px;
+  margin-top: -6000px;
+}
+
+#big-logo img {
+  height: 6310px;
+  width: 13780px;
+}
+
 /*
     These 'slide' step styles were heavily inspired by HTML5 Slides:
     http://html5slides.googlecode.com/svn/trunk/styles.css

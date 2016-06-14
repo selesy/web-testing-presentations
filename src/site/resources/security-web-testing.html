@@ -49,8 +49,7 @@
 
 
 
-
-    <div id="bio" class="step slide slide-bulleted" data-x="-8000" data-y="3000">
+    <div id="bio" class="step slide slide-bulleted" data-x="0" data-y="1000">
       <h1>About Me</h1>
       <ul>
         <li>Steve Moyer</li>
@@ -60,7 +59,7 @@
       </ul>
     </div>
 
-    <div id="survey1" class="step slide slide-bulleted" data-x="-7000" data-y="3000">
+    <div id="survey1" class="step slide slide-bulleted" data-x="1500" data-y="1000">
       <h1>About You</h1>
       <h2>Automated testing?</h2>
       <ul>
@@ -71,7 +70,7 @@
       </ul>
     </div>
 
-    <div id="survey2" class="step slide slide-bulleted" data-x="-6000" data-y="3000">
+    <div id="survey2" class="step slide slide-bulleted" data-x="3000" data-y="1000">
       <h1>About You</h1>
       <h2>Process</h2>
       <ul>
@@ -81,7 +80,7 @@
       </ul>
     </div>
 
-    <div id="survey3" class="step slide slide-bulleted" data-x="-5000" data-y="3000">
+    <div id="survey3" class="step slide slide-bulleted" data-x="4500" data-y="1000">
       <h1>About You</h1>
       <h2>Tools</h2>
       <ul>
@@ -92,30 +91,7 @@
       </ul>
     </div>
 
-    <div id="agenda" class="step slide slide-bulleted" data-x="-4000" data-y="3000">
-      <h1>Agenda</h1>
-      <ul>
-        <li>Why use automation?</li>
-        <li>Selenium overview</li>
-        <li>Selenium features</li>
-        <li>Examples</li>
-        <li>Best practices</li>
-      </ul>
-    </div>
-
-    <div id="why1" class="step" data-x="-3000" data-y="3000">
-      <h1>Why Automate Functional Tests?</h1>
-      <p class="quote">"Move Fast and Break Things"</p>
-      <p class="citation">- Facebook's Mark Zuckerberg</p>
-    </div>
-
-    <div id="why2" class="step" data-x="-2000" data-y="3000">
-      <h1>Why Automate Functional Tests?</h1>
-      <p class="quote">"Move Fast with Stable Infra"</p>
-      <p class="citation">- Facebook's Mark Zuckerberg (April 2014)</p>
-    </div>
-
-    <div id="why3" class="step bulleted" data-x="-1000" data-y="3000">
+    <div id="why3" class="step slide slide-bulleted" data-x="6000" data-y="1000">
       <h1>Penn State's AIS Work-flow</h1>
       <ul>
         <li>Development servers</li>
@@ -125,32 +101,47 @@
       </ul>
     </div>
 
-    <div id="why4" class="step bulleted" data-x="0" data-y="3000">
+    <div id="why4" class="step slide slide-bulleted" data-x="7500" data-y="1000">
       <h1>Penn State's AIS - Acceptance Testing</h1>
       <ul>
         <li>Functional testing (Selenium2)</li>
-        <li>Security testing (OWASP)</li>
+        <li>Security testing (OWASP/SQLMap)</li>
         <li>Performance/Load testing (JUnitPerf/JMeter)</li>
         <li>Accessibility testing (?)</li>
       </ul>
     </div>
-    
-    <div id="zaproxy-section" class="step slide slide-section" data-x="0" data-y="6000">
+
+    <div id="agenda" class="step slide slide-bulleted" data-x="9000" data-y="1000">
+      <h1>Agenda</h1>
+      <ul>
+        <li>ZED Attack Proxy</li>
+        <li>SQLMap</li>
+        <li>Burp Suite</li>
+      </ul>
+    </div>
+
+
+
+
+
+    <div id="zaproxy-section" class="step slide slide-section" data-x="0" data-y="2000">
       <h1>OWASP Zed Attack Proxy</h1>
     </div>
-    
-    <div id="zaproxy-image" class="step slide slide-image" data-x="1000" data-y="6000">
+
+    <div id="zaproxy-image" class="step slide slide-image" data-x="1500" data-y="2000">
       <h1>ZAProxy Image</h1>
       <img src="somewhere.png" />
     </div>
-    
-    
-    
-    <div id="sqlmap-section" class="step slide slide-section" data-x="0" data-y="9000">
+
+
+
+
+
+    <div id="sqlmap-section" class="step slide slide-section" data-x="0" data-y="3000">
       <h1>SQLMap</h1>
     </div>
-    
-    <div id="sqlmap-features" class="step slide slide-bulleted" data-x="1500" data-y="9000">
+
+    <div id="sqlmap-features" class="step slide slide-bulleted" data-x="1500" data-y="3000">
       <h1>SQLMap Features</h1>
       <ul>
         <li>Support for many RDBMS databases</li>
@@ -160,8 +151,8 @@
         <li>Query parameters or forms</li>
       </ul>
     </div>
-    
-    <div id="sqlmap-pros" class="step slide slide-bulleted" data-x="3000" data-y="9000">
+
+    <div id="sqlmap-pros" class="step slide slide-bulleted" data-x="3000" data-y="3000">
       <h1>SQLMap Pros</h1>
       <ul>
         <li>Highly configurable</li>
@@ -170,48 +161,47 @@
         <li>Free and maintained</li>
       </ul>
     </div>
-    
-    <div id="sqlmap-cons" class="step slide slide-bulleted" data-x="4500" data-y="9000">
+
+    <div id="sqlmap-cons" class="step slide slide-bulleted" data-x="4500" data-y="3000">
       <h1>SQLMap Cons</h1>
       <ul>
-        <li>"[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual
-        consent is illegal. It is the end user's responsibility to obey all applicable local,
-        state and federal laws. Developers assume no liability and are not responsible for any
-        misuse or damage caused by this program"</li>
+        <li>"[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal.
+          It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no
+          liability and are not responsible for any misuse or damage caused by this program"</li>
         <li>Can be very slow</li>
       </ul>
     </div>
-    
-    <div id="sqlmap-demo" class="step slide slide-section" data-x="6000" data-y="9000">
+
+    <div id="sqlmap-demo" class="step slide slide-section" data-x="6000" data-y="3000">
       <h1>Non-demo</h1>
     </div>
-    
-    <div id="sqlmap-command" class="step slide slide-image" data-x="7500" data-y="9000">
+
+    <div id="sqlmap-command" class="step slide slide-image" data-x="7500" data-y="3000">
       <h1>SQLMap Command</h1>
       <img src="images/security/sqlmap/sqlmap-command.png" />
     </div>
-    
-    <div id="sqlmap-fields" class="step slide slide-image" data-x="9000" data-y="9000">
+
+    <div id="sqlmap-fields" class="step slide slide-image" data-x="9000" data-y="3000">
       <h1>SQLMap Fields</h1>
       <img src="images/security/sqlmap/sqlmap-fields.png" />
     </div>
-    
-    <div id="sqlmap-output1" class="step slide slide-image" data-x="10500" data-y="9000">
+
+    <div id="sqlmap-output1" class="step slide slide-image" data-x="10500" data-y="3000">
       <h1>SQLMap Output</h1>
       <img src="images/security/sqlmap/sqlmap-output1.png" />
     </div>
-    
-    <div id="sqlmap-output2" class="step slide slide-image" data-x="12000" data-y="9000">
+
+    <div id="sqlmap-output2" class="step slide slide-image" data-x="12000" data-y="3000">
       <h1>SQLMap Output</h1>
       <img src="images/security/sqlmap/sqlmap-output2.png" />
     </div>
-    
-    <div id="sqlmap-results" class="step slide slide-image" data-x="13500" data-y="9000">
+
+    <div id="sqlmap-results" class="step slide slide-image" data-x="13500" data-y="3000">
       <h1>SQLMap Results</h1>
       <img src="images/security/sqlmap/sqlmap-results.png" />
     </div>
-    
-    <div id="sqlmap-automation" class="step slide slide-bulleted" data-x="15000" data-y="9000">
+
+    <div id="sqlmap-automation" class="step slide slide-bulleted" data-x="15000" data-y="3000">
       <h1>SQLMap Automation</h1>
       <ul>
         <li>Launch via shell/console CLI</li>
@@ -220,22 +210,41 @@
         <li>Load targets from a file</li>
       </ul>
     </div>
-    
-    
-    
-    <div id="burpsuite-section" class="step slide slide-section" data-x="0" data-y="12000">
+
+
+
+
+
+    <div id="burpsuite-section" class="step slide slide-section" data-x="0" data-y="4000">
       <h1>Burp Suite</h1>
     </div>
-    
-    <div id="additional-section" class="step slide slide-section" data-x="0" data-y="15000">
+
+
+
+
+
+    <div id="additional-section" class="step slide slide-section" data-x="0" data-y="5000">
       <h1>Additional Tools</h1>
     </div>
-    
-    <div id="additional-commercial" class="step slide slide-bulleted" data-x="3000" data-y="15000">
+
+    <div id="additional-commercial" class="step slide slide-bulleted" data-x="1500" data-y="5000">
       <h1>Commercial Tools</h1>
     </div>
-    
-    <div id="references-1" class="step slide slide-bulleted" data-x="0" data-y="18000">
+
+    <div id="questions" class="step slide slide-section" data-x="3000" data-y="5000">
+      <h1>Questions</h1>
+    </div>
+
+    <div id="contact" class="step slide slide-section" data-x="4500" data-y="5000">
+      <h1>Contact Information</h1>
+      <ul>
+        <li>smoyer@psu.edu</li>
+        <li>smoyer64 on GitHub</li>
+        <li>swm16@chat.psu.edu (XMPP Chat)</li>
+      </ul>
+    </div>
+
+    <div id="references-1" class="step slide slide-bulleted" data-x="6000" data-y="5000">
       <h1>References</h1>
       <ul>
         <li><a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">ZED Attack Proxy</a></li>
@@ -244,7 +253,7 @@
       </ul>
     </div>
 
-    <div id="references-2" class="step slide slide-bulleted" data-x="1000" data-y="18000">
+    <div id="references-2" class="step slide slide-bulleted" data-x="7500" data-y="5000">
       <h1>References (continued)</h1>
       <ul>
         <li><a href="http://findbugs.sourceforge.net/findbugs2.html#plugins">FindBugs</a></li>
@@ -256,15 +265,14 @@
       </ul>
     </div>
 
-    <div id="questions" class="step slide slide-section" data-x="5000" data-y="18000">
-      <h1>Questions</h1>
+
+
+
+
+    <div id="all" class="step" data-x="7500" data-y="500" data-scale="15"></div>
+    <div id="big-logo">
+      <img src="images/PS_HOR_RGB_2C.png" />
     </div>
-
-
-
-
-
-
   </div>
 
   <script src="scripts/impress.js"></script>
